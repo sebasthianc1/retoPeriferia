@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agente · Registro de Contratos</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>Agente de Registro de Contratos Vigentes</h1>
+      <span id="estado-salud" class="badge">conectando…</span>
+    </header>
+
+    <div id="confirmacion-banner" class="confirmacion-banner oculto">
+      ⏳ El agente está esperando tu confirmación explícita antes de registrar.
+    </div>
+
+    <section id="chat" class="chat" aria-live="polite"></section>
+
+    <form id="form-chat" class="form-chat">
+      <input
+        id="input-mensaje"
+        type="text"
+        autocomplete="off"
+        placeholder='Ej: "Procesa el buzón con fecha de hoy 2026-09-03"'
+        required
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
