@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agente · Registro como Proveedor</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>Agente de Registro como Proveedor</h1>
+      <span id="estado-salud" class="badge">conectando…</span>
+    </header>
+
+    <div id="confirmacion-banner" class="confirmacion-banner oculto">
+      ⏳ El agente está esperando tu confirmación explícita antes de continuar.
+    </div>
+
+    <section id="chat" class="chat" aria-live="polite"></section>
+
+    <form id="form-chat" class="form-chat">
+      <input
+        id="input-mensaje"
+        type="text"
+        autocomplete="off"
+        placeholder='Ej: "Procesa el caso ec-corp-andina"'
+        required
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
